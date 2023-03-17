@@ -71,3 +71,42 @@
 // },0)
 // console.log(res)        //15
 
+//length of objects = number of functions
+
+//program
+
+let food = [
+    {
+        title:"biriyani",
+        price: 300,
+        type : "chicken"
+    },
+    {
+        title:"paneer",
+        price: 200,
+        type: "butter"
+    },
+    {
+        title:"drunken prawn",
+        price:400,
+        type : "sea"
+    },
+]
+    food.map((x)=>{
+        console.log("the food is",x.title,"which costs",x.price)
+    })
+
+    let z= food.filter((x)=>{
+        return x.price>200
+    })
+
+    console.log(z)
+
+    let total =food.reduce((total,x)=>{
+        return total =total+x.price
+    },0)
+    console.log(total)
+
+
+
+
